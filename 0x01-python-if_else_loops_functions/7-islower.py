@@ -15,4 +15,3 @@ if __name__ == "__main__":
             print(f"{char} is not lowercase.")
     else:
         print("Please enter a single character.")
-
