@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 
-def main():
-    """Print the sum of all command-line arguments."""
+if __name__ == "__main__":
+    """Print the addition of all arguments."""
     import sys
 
     total = 0
-    for i in range(1, len(sys.argv)):
-        total += int(sys.argv[i])
-    print("Sum:", total)
-
-if __name__ == "__main__":
-    main()
+    for i in range(len(sys.argv) - 1):
+        total += int(sys.argv[i + 1])
+    print("{}".format(total))
 
